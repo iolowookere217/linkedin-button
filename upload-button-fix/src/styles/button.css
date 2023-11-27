@@ -1,0 +1,54 @@
+.btn {
+  padding: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.btn-primary2 {
+  border-radius: 4px;
+  background: #ffffff;
+  color: #c0c0c0;
+  border: 1px solid #a8a7a7;
+}
+.btn-primary1 {
+  border-radius: 4px;
+  background: #2929cc;
+  color: #ffffff;
+}
+.btn-primary {
+  background: var(
+    --gradient,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+  );
+  color: #2929cc;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #10b2f3;
+  border: 2px solid
+    var(
+      --gradient,
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+}
+.btn-radius {
+  border-radius: 5px;
+}
+.btn-search {
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  margin-bottom: 0.8125rem;
+  height: 2.6875rem;
+  font-size: 15px;
+  background: #2929cc;
+}
