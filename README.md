@@ -5,9 +5,9 @@ In this project you will able to add additional image in the editor postmodal wi
 ## GETTING STARTED WITH THE REACT-VITE PROJECT
 
 - ### clone the repository by running
-      git clone Navbar
+      git clone https://github.com/iolowookere217/linkedin-button.git
 
-- ### cd into the directory upload-button-fix
+- ### cd into the directory upload-button-fix 
 
 - ### open a terminal in your preferred editor (e.g. VSCODE) and run the command:
       npm install
