@@ -4,10 +4,12 @@ import { PiNotebookBold } from "react-icons/pi";
 import React, { useState } from "react";
 import PostModal from "./PostModal"; // Import your modal component
 import EditorModal from "./EditorModal";
+import CancelModal from "./cancelModal";
 
 const Main = () => {
   const [showPostModal, setShowPostModal] = useState(false);
   const [showEditorModal, setShowEditorModal] = useState(false);
+  const [showCancelModal, setShowCancelModal] = useState(false);
   const [images, setImages] = useState([]);
 
   const openPostModal = () => {
@@ -26,6 +28,10 @@ const Main = () => {
     setShowEditorModal(false);
   };
 
+  const closeCancelModal = () => {
+    setShowCancelModal(false);
+  };
+
   const closeModal = () => {
     setModalIsOpen(false);
   };
@@ -34,11 +40,11 @@ const Main = () => {
       <div className="bg-white w-[36rem] h-32 flex flex-col items-center  text-sm text-gray-600  px-16 rounded-[.5rem] ">
         <div className="flex item items-center gap-2 justify-center w-full py-2 ">
           <img
-            src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_400_400/0/1676384583413?e=1701446400&v=beta&t=AKS2x0Gyl9KqhFCoWaExVNXW38h-3wmijo4sPN6k2w0"
+            src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_100_100/0/1676384583413?e=1704690000&v=beta&t=nEiqK4sUNwDKRE3ybuUScNGHR-RS4rCBjruXPc6-4Qw"
             alt="profile image"
             className="h-[3.5rem] w-[3.5rem] rounded-full hover:cursor-pointer"
           />
-          <div className="h-12 items-center justify-start bg-transparent border border-1 rounded-[4rem] hidden lg:inline-flex hover:bg-gray-200 ">
+          <div className="h-12 items-center justify-start bg-transparent border border-1 rounded-[4rem] hover:bg-gray-200 ">
             <button
               onClick={openPostModal}
               className="bg-transparent text-gray-600 w-[30rem] h-[32px] pl-4 text-[14px] focus:outline-none hover:cursor-pointer flex justify-start items-center"
@@ -67,10 +73,16 @@ const Main = () => {
         closeModal={closePostModal}
         openEditorModal={openEditorModal} // Pass function to open EditorModal
         setImages={setImages} // Pass function to update images from PostModal
+        images={images}
       />
       <EditorModal
         isOpen={showEditorModal}
         closeModal={closeEditorModal}
+        images={images}
+        setImages={setImages} // Pass function to update images from EditorModal
+      />
+      <CancelModal
+        closeModal={closeCancelModal}
         images={images}
         setImages={setImages} // Pass function to update images from EditorModal
       />

@@ -19,7 +19,7 @@ const Post = () => {
     <div className="bg-white w-[36rem] h-32 flex flex-col items-center  text-sm text-gray-600  px-16 rounded-[.5rem] ">
       <div className="flex item items-center gap-2 justify-center py-2  hover:bg-gray-200 rounded-md px-2">
         <img
-          src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_400_400/0/1676384583413?e=1701446400&v=beta&t=AKS2x0Gyl9KqhFCoWaExVNXW38h-3wmijo4sPN6k2w0"
+          src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_200_200/0/1676384583413?e=1702242000&v=beta&t=eJzQjIXDl9EP3MAzyAJ3oWvQjlQqRnaydCr3OuZtVFY"
           alt="profile image"
           className="h-[3.5rem] w-[3.5rem] rounded-full hover:cursor-pointer"
         />

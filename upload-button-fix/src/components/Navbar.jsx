@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_400_400/0/1676384583413?e=1701446400&v=beta&t=AKS2x0Gyl9KqhFCoWaExVNXW38h-3wmijo4sPN6k2w0"
+            src="https://media.licdn.com/dms/image/D4D35AQHgOmqoZyXyfA/profile-framedphoto-shrink_100_100/0/1676384583413?e=1704690000&v=beta&t=nEiqK4sUNwDKRE3ybuUScNGHR-RS4rCBjruXPc6-4Qw"
             alt="profile image"
             className="h-[26px] w-[26px] rounded-full"
           />
