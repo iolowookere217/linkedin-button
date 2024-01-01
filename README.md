@@ -7,7 +7,7 @@ In this project you will able to add additional image in the editor postmodal wi
 - ### clone the repository by running
       git clone https://github.com/iolowookere217/linkedin-button.git
 
-- ### cd into the directory upload-button-fix 
+- ### cd into the directory: linkedin-button/upload-button-fix 
 
 - ### open a terminal in your preferred editor (e.g. VSCODE) and run the command:
       npm install
